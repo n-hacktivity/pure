@@ -27,7 +27,7 @@
 # Turns seconds into human readable time.
 # 165392 => 1d 21h 56m 32s
 # https://github.com/sindresorhus/pretty-time-zsh
-Prompt_pure_human_time_to_var() {
+prompt_pure_human_time_to_var() {
         local human total_seconds=$1 var=$2
         local days=$(( total_seconds / 60 / 60 / 24 ))
         local hours=$(( total_seconds / 60 / 60 % 24 ))
